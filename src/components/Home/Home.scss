@@ -1,0 +1,95 @@
+@import "../../sassStyle/_fonts";
+@import "../../sassStyle/_mixins";
+@import "../../sassStyle/_variables";
+.home__container {
+  height: calc(100vh - 50px);
+  //border: 2px solid blue;
+  @include Flexbox();
+  flex-direction: column;
+  background-image: url("../../assets/knife.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 900px;
+  //border: 2px solid red;
+  //background-size: cover;
+
+  &--title {
+    color: $White;
+    font-size: 5rem; //78px;
+    // padding: 50px 50px;
+    width: 80%;
+    font-weight: 500;
+    //   border: 20px solid red;
+    font-family: "Soage", sans-serif;
+    //font-family: $OpenSans;
+    text-align: center;
+  }
+  &--p {
+    width: 45%;
+    margin: 20px 0;
+    text-align: center;
+    color: $White;
+    font-size: 1.5rem; // 25px;
+    font-family: $OpenSans;
+  }
+  &--down {
+    text-align: center;
+    color: $White;
+    font-size: 50px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 1027px) {
+  .home__container {
+    height: 100%;
+    &--title {
+      font-size: 4rem;
+    }
+    &--p {
+      width: 55%;
+    }
+    &--down {
+      display: flex;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 828px) {
+  .home__container {
+    background-size: 750px;
+
+    &--title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 621px) {
+  .home__container {
+    background-size: 700px;
+    &--title {
+      font-size: 2.5rem;
+    }
+    &--p {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .home__container {
+    background-size: 700px;
+    padding-bottom: 50px; //Pendiente
+    //background-image: none;
+
+    &--title {
+      font-size: 2rem;
+      width: 90%;
+    }
+    &--p {
+      width: 90%;
+      font-size: 1.2rem;
+    }
+  }
+}

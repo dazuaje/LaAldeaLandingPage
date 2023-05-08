@@ -1,0 +1,28 @@
+@import '../../sassStyle/_variables';;
+.spinner__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 4000000;
+    align-items: center;
+  &--icon {
+    width: 68px;
+    height: 68px;
+    border: 8px solid $Orange;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

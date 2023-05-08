@@ -1,0 +1,24 @@
+@import "../../sassStyle/_fonts";
+@import "../../sassStyle/_mixins";
+@import "../../sassStyle/_variables";
+.arrowBtn__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    //border: none !important;
+    font-family: $OpenSans;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 300;
+    &--icon{
+    cursor: pointer;
+
+        color: $Orange;
+        margin-left: 10px;
+    }
+}

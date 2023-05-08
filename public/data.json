@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "buttermil davidk edredefrfr",
+    "category": "Entradas",
+    "img": "./burguer.png",
+    " price": 40,
+    "desc": "freegan copper mug whatever cold-pressed"
+  },
+  {
+    "id": 2,
+    "title": "diner double",
+    "category": "Carnes",
+    "img": "./burguer.png",
+    "price": 40,
+    "desc": "leggings gochujang helvetica manhundercats "
+  },
+  {
+    "id": 3,
+    "title": "milkshake",
+    "category": "Sopas",
+    "img": "./burguer.png",
+    "price": 3,
+    "desc": "ombuphoto booth before they sold out organic viral."
+  },
+  {
+    " id": 4,
+    "title": "country delight",
+    "category": "Especiales",
+    "img": "./burguer.png",
+    "price": 8,
+    "desc": "Shabditch. Prism austin mlkshk truffaut"
+  },
+  {
+    "id": 5,
+    "title": "egg attack",
+    "category": "Postres",
+    "img": "./burguer.png",
+    "price": 9,
+    "desc": "frterrest meditation farm-to-table 90's pop-up"
+  },
+
+  {
+    "id": 6,
+    "title": "David Eggs",
+    "category": "Postres",
+    "img": "./burguer.png",
+    "price": 30,
+    "desc": "Torta negra con azuacar y cafe"
+  }
+]

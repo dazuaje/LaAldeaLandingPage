@@ -1,0 +1,58 @@
+@import "../../sassStyle/_fonts";
+@import "../../sassStyle/_mixins";
+@import "../../sassStyle/_variables";
+.features__container {
+  // @include Flexbox();
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  //border: 2px solid yellow;
+  //padding-bottom: 40px;
+  &__card {
+    background-color: #f5b576;
+    border-radius: 10px;
+    margin: 0 10px;
+    flex-direction: column;
+    width: 33%;//350px;
+    //border: 2px solid red;
+    height: 100px;
+    @include Flexbox();
+  }
+  &--img {
+    margin-bottom: 10px;
+    font-size: 40px;
+    //border: 2px solid blue;
+  }
+
+  &--content {
+    font-weight: medium;
+    text-align: center;
+    font-family: $OpenSans;
+    font-size:1.5rem// 25px;
+
+    //border: 2px solid red;
+  }
+}
+//1070
+
+@media only screen and (max-width: 770px) {
+  .features__container{
+    &--content{
+      font-size: 1.3rem;
+      //border: 2px solid red;
+    }
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  .features__container{
+    flex-direction: column;
+    width: 100%;
+    &__card{
+      margin: 20px;
+      height: 150px;
+    width: 80%;
+  }
+  }
+
+}

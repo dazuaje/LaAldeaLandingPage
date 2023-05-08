@@ -1,0 +1,141 @@
+@import "../../sassStyle/_fonts";
+@import "../../sassStyle/_mixins";
+@import "../../sassStyle/_variables";
+
+.aboutUs__container {
+  height: 110vh;
+  @include Flexbox();
+  // border: 2px solid red;
+  &__mini {
+   // border: 2px solid blue;
+    @include Flexbox();
+    width: 80%;
+    height: 80%;
+  }
+  &__content {
+    width: 94%; //64
+    height: 100%;
+   // border: 2px solid yellowgreen;
+    margin-right: 20px;
+  }
+  &--title {
+    text-align: left;
+    margin-top: 50px;
+    font-family: 'Soage', sans-serif;
+    font-size: 2.9rem; //46.5px;
+   // font-family: $OpenSans;
+    color: $Orange;
+    letter-spacing: 3px;
+  }
+  &--subtitle {
+    margin: 20px 0;
+    font-size: 1.8rem; // 30px;
+    font-family: $OpenSans;
+    font-weight: 600;
+    color: #333332;
+  }
+  &--p {
+    font-size: 1.5rem; //20px;
+    text-align: justify;
+    color: #333332;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+  &__image {
+    width: 40%; //50%;
+    //border: 2px solid red;
+    height: 100%;
+    //background-image: url('../../assets/aboutUsMeat.jpg');
+    @include Flexbox();
+  }
+  &--img {
+    height: 400px;
+    width: 400px;
+    //object-fit: contain;
+    border-radius: 10px;
+    box-shadow: #00000029 20px 30px 60px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .aboutUs__container {
+    //    background-color: red;
+    &--title {
+      font-size: 2.6rem;
+    }
+    &--img{
+      margin: 20px 20px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1206px) {
+  .aboutUs__container {
+    // background-color: red;
+    height: 100%; //190vh
+    &__mini {
+      flex-direction: column;
+      //height: 90%;
+      width: 90%;
+    }
+    &__image {
+      margin-top: 20px;
+    }
+    &--title {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    &--subtitle {
+      text-align: center;
+    }
+    &--btn {
+      //display: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 578px) {
+  .aboutUs__container {
+    &--title {
+      font-size: 2rem;
+    }
+    &--subtitle {
+      font-size: 1.5rem;
+    }
+    &--p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .aboutUs__container {
+    &__image {
+      width: 100%;
+    }
+    &--img {
+      height: 350px;
+      width: 350px;
+      margin: 20px 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .aboutUs__container {
+    &__content{
+    //  border: 2px solid red;
+    }
+    &--img {
+      height: 300px;
+      width: 300px;
+    }
+    &--title{
+    //  border: 2px solid red;
+      //font-size: 1.rem;
+      letter-spacing: 0px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@import "../../sassStyle/_fonts";
+@import "../../sassStyle/_mixins";
+@import "../../sassStyle/_variables";
+
+.cardMenu__container {
+  width: 250px;
+  height: 350px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+ // border: 2px solid red;
+  background-color: $White;
+  &__image {
+   // border: 2px solid yellow;
+    height: 50%;
+    @include Flexbox();
+  }
+  &--img {
+    height: 90%;
+    width: 90%;
+  }
+  &__content {
+    position: relative;
+   // border: 2px solid blue;
+    height: 50%;
+  }
+  &--product{
+    margin: 0px 20px 0px 20px;
+    font-family: $Raleway;
+    font-weight: bold;
+    height: 70px;
+    font-size: 1.6rem;//26px;
+    //border: 2px solid red;
+  }
+  &--price{
+    margin: 0px 20px 5px 20px;
+    color: $Orange;
+    font-family: $Lato;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &--description{
+    margin: 0 20px;
+    text-align: justify;
+  }
+  &__action{
+    @include Flexbox();
+   //border: 2px solid green;
+    position: absolute;
+    bottom: 14%;
+    width: 100%;
+  }
+  &__plusBtn{
+     // border: 2px solid red;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  &--plus{
+    font-size: 25px;
+  }
+  &__lessBtn{
+   // border: 2px solid red;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--less{
+    font-size: 25px;
+  }
+  &--number{
+    margin: 0 30px 0 30px;
+    color: $White;
+    background-color: gray;
+    padding: 10px 15px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 842px) {
+  .cardMenu__container{
+    width: 210px;
+    height: 350px;
+    margin-right: 20px;
+    &--product{
+      width: 100%;
+    font-size: 1.4rem;
+    height: 70px;
+   // margin: 0px 10px 0px 10px;
+
+    }
+    
+  }
+}
+
+
+@media only screen and (max-width: 478px) {
+  .cardMenu__container{
+    width: 250px;
+    height: 350px;
+  //  margin-right: 20px;
+        &--product{
+    font-size: 1.6rem;
+    height: 60px;
+    //margin: 0px 10px 0px 10px;
+
+    }
+
+    
+  }
+}
+
+/*
+@media only screen and (max-width: 729px) {
+  .cardMenu__container{
+    width: 200px;
+    height: 300px;
+    
+  }
+}
+*/
